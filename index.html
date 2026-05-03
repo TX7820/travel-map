@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>My Travel Map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<div id="sidebar">
+  <h2>🌍 My Footprints</h2>
+
+  <div class="input-group">
+    <input id="placeInput" placeholder="Where next?..." />
+    <button onclick="addPlace()">Add</button>
+  </div>
+
+  <ul id="placeList"></ul>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
